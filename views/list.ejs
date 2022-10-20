@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="resoures/css/list.css">
+  <title>statusPage</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <% if( status === "Success"){ %>
+
+      <div class="success">
+        <h1> <%= status %> </h1>
+      </div>
+
+      <% } else { %>
+
+        <div class="failure">
+          <h1> <%= status %> </h1>
+        </div>
+
+        <% } %>
+
+      </header>
+
+      <section>
+
+        <p>&nbsp;</p>
+
+      </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="resoures/js/ejsScript.js" charset="utf-8"></script>
+    </body>
+
+</html>
